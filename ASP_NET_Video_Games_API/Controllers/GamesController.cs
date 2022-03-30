@@ -21,7 +21,9 @@ namespace ASP_NET_Video_Games_API.Controllers
         {
             var videoGames = _context.VideoGames;
 
-            foreach (var videogame in videoGames)
+
+            
+
 
 
             return Ok(videoGames);
@@ -32,11 +34,11 @@ namespace ASP_NET_Video_Games_API.Controllers
 
         public IActionResult GetGamesById(int Id)
         {
-            int? maxYear = _context.VideoGames.Select(vg => vg.Year).Max();
-            int? minYear = _context.VideoGames.Select(vg => vg.Year).Min();
+            //int? maxYear = _context.VideoGames.Select(vg => vg.Year).Max();
+            //int? minYear = _context.VideoGames.Select(vg => vg.Year).Min();
 
             var videoGames = _context.VideoGames.Where(vg => vg.Id == Id);
-            return Ok();
+            return Ok(videoGames);
         }
 
     }
