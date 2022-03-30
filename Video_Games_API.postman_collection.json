@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "8dcdf276-ed26-43e2-aa47-c208b85d0430",
+		"name": "Video_Games_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_Publishers",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Games_By_Publisher",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

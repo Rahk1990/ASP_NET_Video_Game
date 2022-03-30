@@ -1,6 +1,7 @@
 ﻿using ASP_NET_Video_Games_API.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ASP_NET_Video_Games_API.Controllers;
 
 namespace ASP_NET_Video_Games_API.Controllers
 {
@@ -16,12 +17,20 @@ namespace ASP_NET_Video_Games_API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetPublishers() 
+        public IActionResult GetPublishers()
         {
             var videoGamePublishers = _context.VideoGames.Select(vg => vg.Publisher).Distinct();
 
             return Ok(videoGamePublishers);
         }
 
-    }
+        [HttpGet("{id}")]
+
+        public IActionResult GetGamesByPublisher(int id)
+        {
+
+            return Ok();
+        }
+            
+            }
 }
