@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Get_Publishers",
+			"name": "Get_Games",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -14,7 +14,7 @@
 			"response": []
 		},
 		{
-			"name": "Get_Games_By_Publisher",
+			"name": "Get_Games_By_Id",
 			"request": {
 				"method": "GET",
 				"header": []
